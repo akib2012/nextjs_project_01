@@ -1,10 +1,17 @@
-import Navbar from "@/Componetns/Navbar";
+import ExploreClubs from "@/Componetns/ExploreClubs";
+import HeroSection from "@/Componetns/HerSection";
+import ClubSphereHowItWorks from "@/Componetns/HowitWorks";
+import Testimonials from "@/Componetns/testimonials";
+import TrustedByCommunities from "@/Componetns/TrustedByCommunities";
+import UpcomingEvents from "@/Componetns/UpcomingEvents";
+import WhyChooseClubSphere from "@/Componetns/WhyChooseClubSphere";
+import { Explora } from "next/font/google";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
-     {/*  <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+      {/*  <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -61,7 +68,13 @@ export default function Home() {
           </a>
         </div>
       </main> */}
-      <Navbar></Navbar>
+      <HeroSection></HeroSection>
+      <ClubSphereHowItWorks></ClubSphereHowItWorks>
+      <TrustedByCommunities></TrustedByCommunities>
+      <WhyChooseClubSphere></WhyChooseClubSphere>
+      <ExploreClubs></ExploreClubs>
+      <UpcomingEvents></UpcomingEvents>
+      <Testimonials></Testimonials>
     </div>
   );
 }

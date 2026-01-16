@@ -7,10 +7,10 @@ export default function Navbar() {
         <Link href="/">Home</Link>
       </li>
       <li>
-        <Link href="/about">About</Link>
+        <Link href="/About">About</Link>
       </li>
       <li>
-        <Link href="/contact">Contact</Link>
+        <Link href="/PrivacyPolicy">Privacy Policy</Link>
       </li>
     </>
   );
@@ -44,12 +44,12 @@ export default function Navbar() {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Clubbing.com</a>
+          <Link href="/" className="btn btn-ghost text-xl">
+            Clubbing.com
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-           {links}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
           <a className="btn">login</a>
